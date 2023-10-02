@@ -115,7 +115,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	int i = 1;
     while (1)
     {
     /* USER CODE END WHILE */
@@ -138,7 +137,6 @@ int main(void)
 		  }
 		  HAL_Delay(1000);
 		  i++;
-    }
     /* USER CODE BEGIN 3 */
 
 
