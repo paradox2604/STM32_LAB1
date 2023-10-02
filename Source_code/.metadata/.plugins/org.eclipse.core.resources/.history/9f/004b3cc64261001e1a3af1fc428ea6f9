@@ -97,7 +97,7 @@ int main(void)
     		HAL_GPIO_WritePin(D_GPIO_Port,D_Pin, RESET);
     		HAL_GPIO_WritePin(E_GPIO_Port,E_Pin, RESET);
     		HAL_GPIO_WritePin(F_GPIO_Port,F_Pin, RESET);
-    		HAL_GPIO_WritePin(G_GPIO_Port,G_Pin, SET);
+    		HAL_GPIO_WritePin(G_GPIO_Port,G_Pin, RESET);
     	    break ;
     	case 1 :
     		HAL_GPIO_WritePin(A_GPIO_Port,A_Pin, SET);
@@ -191,11 +191,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if(counter >= 10)
-		  counter=0;
-	  display7SEG(counter);
-	  counter++;
-	  HAL_Delay(1000);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
