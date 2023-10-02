@@ -768,3 +768,35 @@
 2023-09-28 20:41:56,199 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 3501mS.
 2023-09-28 20:41:56,199 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
 2023-09-28 20:41:56,214 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-09-28 20:53:57,432 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 799693136 Bytes (1073741824)
+2023-09-28 20:53:58,644 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 823288144 Bytes (1073741824)
+2023-09-28 20:54:00,871 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 861036880 Bytes (1073741824)
+2023-09-28 20:54:01,257 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-09-28 20:54:01,257 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-09-28 20:54:01,257 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-09-28 20:54:01,258 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-09-28 20:54:01,258 [INFO] CodeGenerator:663 - code generatio: config db path: D:\BK\HK_231\VXL\Project\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-09-28 20:54:01,587 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\MXTmpFiles\license.tmp_save
+2023-09-28 20:54:01,654 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\MXTmpFiles\license.tmp
+2023-09-28 20:54:01,685 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\MXTmpFiles\gpio.tmp_save
+2023-09-28 20:54:01,764 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\MXTmpFiles\gpio.tmp
+2023-09-28 20:54:01,798 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Src\stm32f1xx_it.c_save
+2023-09-28 20:54:02,003 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Src\stm32f1xx_it.c
+2023-09-28 20:54:02,023 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Inc\stm32f1xx_it.h_save
+2023-09-28 20:54:02,156 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Inc\stm32f1xx_it.h
+2023-09-28 20:54:02,183 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Src\stm32f1xx_hal_msp.c_save
+2023-09-28 20:54:02,319 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Src\stm32f1xx_hal_msp.c
+2023-09-28 20:54:02,324 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\MXTmpFiles\system.tmp_save
+2023-09-28 20:54:02,404 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\MXTmpFiles\system.tmp
+2023-09-28 20:54:02,427 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-09-28 20:54:02,554 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Inc\stm32f1xx_hal_conf.h
+2023-09-28 20:54:02,594 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Inc\main.h_save
+2023-09-28 20:54:02,687 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Inc\main.h
+2023-09-28 20:54:02,703 [INFO] CodeEngine:239 - oldGeneratedFile, D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Src\main.c_save
+2023-09-28 20:54:02,888 [INFO] CodeEngine:257 - Generated code: D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\Core\Src\main.c
+2023-09-28 20:54:04,236 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 129mS.
+2023-09-28 20:54:04,243 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-09-28 20:54:05,162 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-09-28 20:54:08,276 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 4033mS.
+2023-09-28 20:54:08,277 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-09-28 20:54:08,281 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
