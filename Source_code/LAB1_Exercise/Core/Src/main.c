@@ -191,11 +191,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if(counter >= 10)
-		  counter=0;
-	  display7SEG(counter);
-	  counter++;
-	  HAL_Delay(1000);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -246,16 +242,42 @@ static void MX_GPIO_Init(void)
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, A_Pin|B_Pin|C_Pin|D_Pin
-                          |E_Pin|F_Pin|G_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, RED1_Pin|RED2_Pin|GREEN1_Pin|GREEN2_Pin
+                          |YELLOW1_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : A_Pin B_Pin C_Pin D_Pin
-                           E_Pin F_Pin G_Pin */
-  GPIO_InitStruct.Pin = A_Pin|B_Pin|C_Pin|D_Pin
-                          |E_Pin|F_Pin|G_Pin;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, A_Pin|B_Pin|C_Pin|B1_Pin
+                          |C1_Pin|D1_Pin|E1_Pin|F1_Pin
+                          |G1_Pin|D_Pin|E_Pin|F_Pin
+                          |G_Pin|A1_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : RED1_Pin RED2_Pin GREEN1_Pin GREEN2_Pin
+                           YELLOW1_Pin */
+  GPIO_InitStruct.Pin = RED1_Pin|RED2_Pin|GREEN1_Pin|GREEN2_Pin
+                          |YELLOW1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : YELLOW2_Pin */
+  GPIO_InitStruct.Pin = YELLOW2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(YELLOW2_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : A_Pin B_Pin C_Pin B1_Pin
+                           C1_Pin D1_Pin E1_Pin F1_Pin
+                           G1_Pin D_Pin E_Pin F_Pin
+                           G_Pin A1_Pin */
+  GPIO_InitStruct.Pin = A_Pin|B_Pin|C_Pin|B1_Pin
+                          |C1_Pin|D1_Pin|E1_Pin|F1_Pin
+                          |G1_Pin|D_Pin|E_Pin|F_Pin
+                          |G_Pin|A1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
