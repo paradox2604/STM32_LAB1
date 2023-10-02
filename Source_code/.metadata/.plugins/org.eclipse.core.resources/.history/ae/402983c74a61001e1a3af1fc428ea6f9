@@ -99,10 +99,12 @@ void Error_Handler(void);
 #define A1_Pin GPIO_PIN_9
 #define A1_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
-#define RED1_GREEN2 0
-#define RED1_YELLOW2 1
-#define GREEN1_RED2 2
-#define YELLOW1_RED2 3
+#define RED1 0
+#define RED2 1
+#define YELLOW1 2
+#define YELLOW2 3
+#define GREEN1 4
+#define GREEN1 5
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

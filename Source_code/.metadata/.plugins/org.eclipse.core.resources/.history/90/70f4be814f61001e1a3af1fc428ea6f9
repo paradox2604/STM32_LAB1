@@ -102,7 +102,7 @@ void Error_Handler(void);
 #define RED1_GREEN2 0
 #define RED1_YELLOW2 1
 #define GREEN1_RED2 2
-#define YELLOW1_RED2 3
+#define YELLOW2_RED1 3
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
