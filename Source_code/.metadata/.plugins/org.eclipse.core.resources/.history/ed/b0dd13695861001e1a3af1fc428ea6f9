@@ -145,7 +145,7 @@ int main(void)
 		default: break;
 	  }
 	}
-	void clearNumberOnClock(int num){
+	void clearNumberOnCloc(int num){
 	  switch (num + 1){
 		case 1 : LED1_OFF();break;
 		case 2 : LED2_OFF();break;

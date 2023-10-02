@@ -145,7 +145,7 @@ int main(void)
 		default: break;
 	  }
 	}
-	void clearNumberOnClock(int num){
+	void clearNumberOnCloc(int num){
 	  switch (num + 1){
 		case 1 : LED1_OFF();break;
 		case 2 : LED2_OFF();break;
@@ -168,9 +168,10 @@ int main(void)
     while (1)
     {
     /* USER CODE END WHILE */
+    	clearAllClock();
 		setNumberOnClock(i);
 		HAL_Delay(1000);
-		clearNumberOnClock(i);
+		clearNumberOnCloc(i);
 		i++;
     }
     /* USER CODE BEGIN 3 */

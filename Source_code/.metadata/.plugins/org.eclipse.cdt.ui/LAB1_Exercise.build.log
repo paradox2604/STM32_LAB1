@@ -1,6 +1,9 @@
-01:47:51 **** Incremental Build of configuration Debug for project LAB1_Exercise ****
+02:18:04 **** Incremental Build of configuration Debug for project LAB1_Exercise ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:117:7: warning: 'clearAllClock' defined but not used [-Wunused-function]
+  117 |  void clearAllClock(){
+      |       ^~~~~~~~~~~~~
 arm-none-eabi-gcc -o "LAB1_Exercise.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\BK\HK_231\VXL\GIT\LAB1\Source_code\LAB1_Exercise\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB1_Exercise.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LAB1_Exercise.elf
  
@@ -8,16 +11,16 @@ arm-none-eabi-size   LAB1_Exercise.elf
 arm-none-eabi-objdump -h -S  LAB1_Exercise.elf  > "LAB1_Exercise.list"
 arm-none-eabi-objcopy  -O ihex  LAB1_Exercise.elf  "LAB1_Exercise.hex"
    text	   data	    bss	    dec	    hex	filename
-   5244	     20	   1572	   6836	   1ab4	LAB1_Exercise.elf
+   5736	     20	   1572	   7328	   1ca0	LAB1_Exercise.elf
 arm-none-eabi-objcopy  -O binary  LAB1_Exercise.elf  "LAB1_Exercise.bin"
 Finished building: default.size.stdout
  
 Finished building: LAB1_Exercise.hex
 Finished building: LAB1_Exercise.bin
+ 
 Finished building: LAB1_Exercise.list
  
  
- 
 
-01:47:51 Build Finished. 0 errors, 0 warnings. (took 758ms)
+02:18:05 Build Finished. 0 errors, 1 warnings. (took 922ms)
 

@@ -86,36 +86,8 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-	void LED1(){HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin,RESET);	}
-	void LED2(){ HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin,RESET); }
-	void LED3(){ HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin,RESET); }
-	void LED4(){ HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin,RESET); }
-	void LED5(){ HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin,RESET); }
-	void LED6(){ HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin,RESET); }
-	void LED7(){ HAL_GPIO_WritePin(LED7_GPIO_Port, LED7_Pin,RESET); }
-	void LED8(){ HAL_GPIO_WritePin(LED8_GPIO_Port, LED8_Pin,RESET); }
-	void LED9(){ HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin,RESET); }
-	void LED10(){ HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin,RESET); }
-	void LED11(){ HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin,RESET); }
-	void LED12(){ HAL_GPIO_WritePin(LED12_GPIO_Port, LED12_Pin,RESET); }
-
-
-	void LED1_OFF(){HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin,SET);	}
-	void LED2_OFF(){ HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin,SET); }
-	void LED3_OFF(){ HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin,SET); }
-	void LED4_OFF(){ HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin,SET); }
-	void LED5_OFF(){ HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin,SET); }
-	void LED6_OFF(){ HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin,SET); }
-	void LED7_OFF(){ HAL_GPIO_WritePin(LED7_GPIO_Port, LED7_Pin,SET); }
-	void LED8_OFF(){ HAL_GPIO_WritePin(LED8_GPIO_Port, LED8_Pin,SET); }
-	void LED9_OFF(){ HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin,SET); }
-	void LED10_OFF(){ HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin,SET); }
-	void LED11_OFF(){ HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin,SET); }
-	void LED12_OFF(){ HAL_GPIO_WritePin(LED12_GPIO_Port, LED12_Pin,SET); }
-
-  /* USER CODE END 2 */
-	void clearAllClock(){
-		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin,SET);
+	void LED1(){
+		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin,RESET);
 		HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin,SET);
 		HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin,SET);
 		HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin,SET);
@@ -128,50 +100,44 @@ int main(void)
 		HAL_GPIO_WritePin(LED11_GPIO_Port,LED11_Pin,SET);
 		HAL_GPIO_WritePin(LED12_GPIO_Port, LED12_Pin,SET);
 	}
-	void setNumberOnClock(int num){
-	  switch (num + 1){
-		case 1 : LED1();break;
-		case 2 : LED2();break;
-		case 3 : LED3();break;
-		case 4 : LED4();break;
-		case 5 : LED5();break;
-		case 6 : LED6();break;
-		case 7 : LED7();break;
-		case 8 : LED8();break;
-		case 9 : LED9();break;
-		case 10 : LED10();break;
-		case 11 : LED11();break;
-		case 12 : LED12();break;
-		default: break;
-	  }
-	}
-	void clearNumberOnClock(int num){
-	  switch (num + 1){
-		case 1 : LED1_OFF();break;
-		case 2 : LED2_OFF();break;
-		case 3 : LED3_OFF();break;
-		case 4 : LED4_OFF();break;
-		case 5 : LED5_OFF();break;
-		case 6 : LED6_OFF();break;
-		case 7 : LED7_OFF();break;
-		case 8 : LED8_OFF();break;
-		case 9 : LED9_OFF();break;
-		case 10 : LED10_OFF();break;
-		case 11 : LED11_OFF();break;
-		case 12 : LED12_OFF();break;
-		default: break;
-	  }
-	}
+	void LED2(){ HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin,RESET); }
+	void LED3(){ HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin,RESET); }
+	void LED4(){ HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin,RESET); }
+	void LED5(){ HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin,RESET); }
+	void LED6(){ HAL_GPIO_WritePin(LED6_GPIO_Port, LED6_Pin,RESET); }
+	void LED7(){ HAL_GPIO_WritePin(LED7_GPIO_Port, LED7_Pin,RESET); }
+	void LED8(){ HAL_GPIO_WritePin(LED8_GPIO_Port, LED8_Pin,RESET); }
+	void LED9(){ HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin,RESET); }
+	void LED10(){ HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin,RESET); }
+	void LED11(){ HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin,RESET); }
+	void LED12(){ HAL_GPIO_WritePin(LED12_GPIO_Port, LED12_Pin,RESET); }
+  /* USER CODE END 2 */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	int i = 0;
+	int i = 1;
     while (1)
     {
     /* USER CODE END WHILE */
-		setNumberOnClock(i);
-		HAL_Delay(1000);
-		clearNumberOnClock(i);
-		i++;
+		switch (i){
+			  case 1 : LED1();break;
+			  case 2 : LED2();break;
+			  case 3 : LED3();break;
+			  case 4 : LED4();break;
+			  case 5 : LED5();break;
+			  case 6 : LED6();break;
+			  case 7 : LED7();break;
+			  case 8 : LED8();break;
+			  case 9 : LED9();break;
+			  case 10: LED10();break;
+			  case 11: LED11();break;
+			  case 12:
+				  LED12();
+				  i=0;
+				  break;
+		  }
+		  HAL_Delay(1000);
+		  i++;
     }
     /* USER CODE BEGIN 3 */
 
