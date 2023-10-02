@@ -166,23 +166,24 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 	int hour = 0;
 	int min = 0;
-	int sec = 0;
+//	int sec = 0;
     while (1)
     {
     /* USER CODE END WHILE */
 		int led_min = min / 5;
-		int led_sec = sec / 5;
+//		int led_sec = sec / 5;
 
 		clearAllClock();
 		setNumberOnClock(led_min);
-		setNumberOnClock(led_sec);
+//		setNumberOnClock(led_sec);
 		setNumberOnClock(hour);
 
-		sec++;
-		if (sec >= 60){
-			min++;
-			sec = 0;
-		}
+//		sec++;
+//		if (sec >= 60){
+//			min++;
+//			sec = 0;
+//		}
+		min++;
 		if (min >= 60){
 			hour++;
 			min = 0;
@@ -190,7 +191,7 @@ int main(void)
 		if (hour >= 12){
 			hour = 0;
 		}
-		HAL_Delay(1000);
+		HAL_Delay(10);
     }
     /* USER CODE BEGIN 3 */
 
